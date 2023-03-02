@@ -1,0 +1,519 @@
+
+/*HEADER*/
+.header{
+    width: 100%;
+    height: 78px;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.header__logoriot{
+    display: inline-block;
+}
+
+.header__logoriotimg{
+    height: 24px;
+    margin: 28px 28px 0 36px;
+}
+
+.header__logo-lol{
+    display: inline-block;
+    align-self: center;
+}
+
+.header__logo-lolimg{
+    width: 26px;
+}
+
+.header__navbar{
+    width: 70%;
+    margin: 0 auto;
+    display: inline-flex;
+    align-content: start;
+    height: 78px;
+    margin-left: 10px;
+    align-items: center;
+    padding-top: -15px;
+}
+
+.header__navbar li{
+    height: 78px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.header__navbar__items a{
+    color: #F9F9F9;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 5px 16px;
+    font-weight: 800;
+    margin-left: 5px;
+}
+
+.header__login-site{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 24px 0;
+    padding-right: 32px;
+}
+
+.header__login-site__language{
+    width: 32px;
+    height: 32px;
+    background-color: #111111;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.header__login-site__language:hover{
+    background-color: #333333;
+
+}
+
+.header__login-site__loginIn{
+    width: 118px;
+    height: 32px;
+    background-color: #282828;
+    color: white;
+    border-radius: 6.4px;
+    font-weight:800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.header__login-site__playnow{
+    width: 118px;
+    height: 32px;
+    background-color: #53C5E2;
+    color: black;
+    border-radius: 12px;
+    font-weight:800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.header_icon{
+    padding-left: 6px;
+}
+
+.header__navbar li:hover{
+   border-bottom: 5px solid #53C5E2;
+}
+
+.header__navbar li:hover a{
+    background-color: #333333;
+    border-radius: 6.5px;
+}
+/* BANNER*/
+.container{
+    margin-top: 78px;
+}
+
+.banner-news{
+    position: relative;
+    width: 100%;
+}
+
+.banner-news__banner{
+    background: url(/assest/img/wallpaper/banner.jpeg) top center / cover no-repeat;
+    height:426px;
+    -webkit-filter: blur(8px);
+    position: relative;
+}
+
+.banner-news__banner-imgcontain{
+    position: absolute;
+    top:60px;
+    left: calc(8%/2);
+    right: calc(8%/2);
+    width: 92%;
+    height: 500px;
+    overflow: hidden;
+}
+.banner-news__banner-imgcontain:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: -4px;
+    bottom: 4px;
+    right: -4px;
+    border: 1px solid #94A89B;
+}
+
+.banner-news__banner-logo{
+    position:absolute;
+    width: 32%;
+    top:163px;
+    left: calc(68%/2);
+}
+.play-button{
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    padding: 20px 40px;
+    background-color: #53C5E2;
+    z-index: 2;
+    position: absolute;
+    bottom: 92px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.play-button:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: -4px;
+    bottom: 4px;
+    right: -4px;
+    border: 1px solid #94A89B;
+}
+
+/* NEWS SECION*/
+.banner-news__news{
+    background: url(/assest/img/wallpaper/backround.png) left repeat;
+    padding-bottom: 80px;
+}
+.banner-news__news-list{
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-top: 190px;
+    justify-content: space-between;
+    height: 60%;
+}
+
+.news-img{
+    width: 146px;
+    object-fit:cover;    
+    cursor: pointer;
+    transition: transform .5s ease;
+}
+
+.banner-news__news-items:hover .news-img{
+    opacity: 0.9;
+    transform: scale(0.95);
+}
+
+.banner-news__news-items{
+    display: flex;
+    width: calc(90%/3);
+    border: 1px solid #BCBCBC;
+    min-height: 182px;
+    position: relative;
+    border: none;
+}
+
+.banner-news__news-items:after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    bottom: -8px;
+    right: 8px;
+    border: 1px solid #94A89B;
+}
+
+.newsinfo__type{
+    font-size: 10px;
+    color: #BCBCBC;
+}
+.newsinfo__header{
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 800;
+}
+.newsinfo__desc{
+    font-size: 12px;
+    margin-top: 8px;
+    color: #1A1D21;
+    letter-spacing: 0.4px;
+}
+.news-info{
+    padding: 10px;
+}
+.news-info__viewall{
+    font-size: 12px;
+    float: right;
+    padding-right: 5%;
+    padding-top:24px ;
+    text-decoration: none;
+    color: #111111;
+    cursor: pointer;
+}
+.news-info__viewall>i{
+    color: #53C5E2;
+}
+/*CHMAP*/
+
+.champion{
+    padding-top: 140px;
+}
+.champion__desc{
+    text-align: center;
+    position: relative;
+}
+
+.champion__desc> h2{
+    font-size: 24px;
+    font-family: "Beaufort for LOL", serif;
+}
+
+.champion__desc> h1{
+    font-size: 51.5px;
+    font-family: "Beaufort for LOL", serif;
+}
+
+.champion__desc> p{
+    font-size: 0.875rem;
+    letter-spacing: 0.08em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+.champion__desc-btn-CN{
+    padding:10px 20px ;
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: #55C8E4;
+    border: none;
+    min-width: 220px;
+    cursor:pointer;
+    transition: transform 0.3s ease;
+    margin: 8px;
+    color: white;
+}
+
+
+.champion__desc-btn-KP{
+    padding:10px 20px ;
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: #D0A85C;
+    border: none;
+    min-width: 220px;
+    cursor:pointer;
+    transition: transform 0.3s ease;
+    margin: 8px;
+    color: white;
+}
+
+.champion__desc-btn-KP:hover{
+    transform: scaleY(0.9);
+}
+
+
+.champion__desc-btn-CN:hover{
+    transform: scaleY(0.9);
+}
+
+.champion__desc-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.champion__choose{
+    display: flex;
+    padding-left: 120px;
+}
+
+.champion__choose__role{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 310px;
+    z-index: 2;
+    
+}
+
+.champion__choose__role video{
+    width: 451px;
+    padding-left: 100px;
+}
+
+
+.champion__choose__champ-img{
+    flex: 1;
+    border-radius: 50%;
+    position: relative;
+}
+.champion__choose__champ-img:after{
+    content: "";
+    position: absolute;
+    border-radius: 80%;
+    width: 600px;
+    height: 600px;
+    transform: translateX(-10%);
+    bottom: 10%;
+    right: 50px;
+    border: 3px solid yellow;
+}
+
+.champion__choose__champ-img-link{
+    flex: 1;
+    width: 100%;
+    object-fit:cover;
+}
+
+
+.champion__choose__background-link{
+    position: absolute;
+    width: 550px;
+    top:150%;
+    right: auto;
+    left: auto;
+    opacity: 0.2;
+    transform: translateX(-50%);
+}
+
+.champion__choose__role-listbtn{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 66px;
+}
+
+.champion__choose__role-btn{
+    width: 94px;
+    height: 160px;
+    text-transform: uppercase;
+    border: none;
+    transition: transform 0.5s ease;
+    color: white;
+    background: #55C8E4;
+    border-radius: 5px;
+}
+
+.champion__choose__role-btn:hover{
+    transform: scale(1.3);
+    color: #D0A85C; 
+    border: 2px dashed blue;
+    animation: rainbow 2.5s linear;
+	animation-iteration-count: infinite;
+}
+
+/*FOOTER*/
+.footer__container{
+    background-color: #111111;
+}
+.footer__head{
+    height: 78px;
+    background-color: #292929;
+}
+
+.footer__head-list{
+    display: flex;
+    padding: 24px;
+    justify-content: center;
+}
+
+.footer__head-items{
+    color: #F9F9F9;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 8px 16px;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+    border-radius: 5px;
+}
+
+.footer__head-items:hover{
+    background-color: #444444;
+}
+
+.footer__container__iconlist{
+    display: flex;
+    padding: 18px 0;
+    justify-content: center;
+}
+
+.footer__container__iconlist-link{
+    color: #F9F9F9;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background-color: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px ;
+}
+.footer__container__logo{
+    padding: 24px 0 20px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+
+}
+.footer__container__logo-vng{
+    height: 20px;
+    margin-left: 8px;
+}
+.footer__container__logo-riot{
+    height: 36px;
+}
+
+.desc-footer{
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+    color: #444444;
+    max-width: 640px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    font-size: 13px;
+}
+
+.footer__container__privacylist{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 24px 0 28px;
+}
+
+.footer__container__privacyitems{
+    color: #F9F9F9;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 8px 16px;
+    font-family: "Neue Frutiger World",Tahoma,sans-serif;
+    border-radius: 5px;
+}
+
+.footer__container__privacyitems:hover{
+    background-color: #444444;
+}
+
+
+
+.logo18-div{
+    width: 224px;
+    padding-bottom:48px ;
+    margin-right: auto;
+    margin-left:auto;
+}
